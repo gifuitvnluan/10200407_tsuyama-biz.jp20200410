@@ -1,0 +1,99 @@
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+.jspPane {
+	position: absolute;
+}
+.jspVerticalBar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 100%;
+	
+}
+.jspHorizontalBar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+.jspCap {
+	display: none;
+}
+.jspHorizontalBar .jspCap {
+	float: left;
+}
+.jspTrack {
+	width: 6px;
+	margin-left: 6px;
+	background:url(../../img/bg-scroll.png) top left repeat-y;    /*---- edit color background scroll -------------------------------*/
+	position: relative;
+	background:#E5E5E5;
+}
+.jspDrag {
+	width: 6px;
+	background: #F19500;   /*---- edit color scroll -------------------------------*/
+	position: relative;
+top:0;
+	
+	cursor: pointer;
+	
+	
+	
+	
+	
+}
+
+
+.jspPane {width:100% !important;}
+
+.jspContainer  {width:100% !important;}
+.jspScrollable   {width:100% !important;}
+
+
+
+
+
+
+
+
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+	float: left;
+	height: 100%;
+}
+.jspArrow {
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+.jspArrow.jspDisabled {
+	cursor: default;
+	background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+	height: 16px;
+}
+.jspHorizontalBar .jspArrow {
+	width: 10px;
+	float: left;
+	height: 100%;
+}
+.jspVerticalBar .jspArrow:focus {
+	outline: none;
+}
+.jspCorner {
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+	margin: 0 -3px 0 0;
+}
